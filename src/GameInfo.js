@@ -42,7 +42,7 @@ const GameInfo = () => {
 
       {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">
-        <h2>{gameDetails.name}</h2>
+        <h2>fsafdsdf</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
       </div>{/* End Section Title */}
 
@@ -50,24 +50,24 @@ const GameInfo = () => {
 
         <div className="row gy-4 justify-content-center">
           <div className="col-lg-4">
-            <img src={gameDetails.thumb} className="img-fluid" alt=""/>
+            <img src='' className="img-fluid" alt=""/>
           </div>
           <div className="col-lg-8 content">
             <div className="row">
               <div className="col-lg-6">
                 <ul>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Metacritics Score:</strong> <span>{gameDetails.metacriticScore}</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Publisher:</strong> <span>{gameDetails.publisher}</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Release Date:</strong> <span>{gameDetails.releaseDate}</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Retail Price:</strong> <span>${gameDetails.retailPrice}</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Metacritics Score:</strong> <span>sdfsdf</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Publisher:</strong> <span>sdfsdf</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Release Date:</strong> <span>sdfsdf</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Retail Price:</strong> <span>$456375</span></li>
                 </ul>
               </div>
               <div className="col-lg-6">
                 <ul>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Sale Price:</strong> <span>{gameDetails.salePrice}</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Steam Rating Count:</strong> <span>{gameDetails.steamRatingCount}</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Steam Rating %:</strong> <span>{gameDetails.steamRatingPercent}</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Steam Rating Text:</strong> <span>{gameDetails.steamRatingText}</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Sale Price:</strong> <span>dvgsdbsd</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Steam Rating Count:</strong> <span>sdbsdb</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Steam Rating %:</strong> <span>sdbsdb</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Steam Rating Text:</strong> <span>sdbsdb</span></li>
                 </ul>
               </div>
             </div>
