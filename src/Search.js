@@ -10,7 +10,7 @@ const Search = () => {
     const [gameTitle, setGameTitle] = useState('');
 
     const searchTitle = async()=>{
-        const response = await axios.get('https://www.cheapshark.com/api/1.0/games?title=batman')
+        const response = await axios.get(`${searchTitleURL}${gameTitle}`)
         console.log(response.data);
         setGames(response.data);
     }
