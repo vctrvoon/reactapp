@@ -2,16 +2,30 @@ import React, {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 const GameInfo = () => {
+
+  
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
     let {dealid} = useParams();
     console.log(dealid)
+
+    
+    const [gameDetails, setGameDetails] = useState([]);
 
    const searchURL = 'https://www.cheapshark.com/api/1.0/deals?id='
 
    const getDeal = async() =>{
     const response = await axios.get(`${searchURL}${encodeURIComponent(dealid)}`)
-    console.log(response)
+    console.log(response.data);
+    setGameDetails(response.data);
    }
 
     useEffect(()=>{
@@ -25,7 +39,7 @@ const GameInfo = () => {
 
       {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">
-        <h2>About</h2>
+        <h2>{gameDetails.gameInfo.name}</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
       </div>{/* End Section Title */}
 
@@ -33,29 +47,24 @@ const GameInfo = () => {
 
         <div className="row gy-4 justify-content-center">
           <div className="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" className="img-fluid" alt=""/>
+            <img src={gameDetails.gameInfo.thumb} className="img-fluid" alt=""/>
           </div>
           <div className="col-lg-8 content">
-            <h2>UI/UX Designer &amp; Web Developer.</h2>
-            <p className="fst-italic py-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
             <div className="row">
               <div className="col-lg-6">
                 <ul>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Metacritics Score:</strong> <span>{gameDetails.gameInfo.metacriticScore}</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Publisher:</strong> <span>{gameDetails.gameInfo.publisher}</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Release Date:</strong> <span>{gameDetails.gameInfo.releaseDate}</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Retail Price:</strong> <span>${gameDetails.gameInfo.retailPrice}</span></li>
                 </ul>
               </div>
               <div className="col-lg-6">
                 <ul>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Sale Price:</strong> <span>{gameDetails.gameInfo.salePrice}</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Steam Rating Count:</strong> <span>{gameDetails.gameInfo.steamRatingCount}</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Steam Rating %:</strong> <span>{gameDetails.gameInfo.steamRatingPercent}</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Steam Rating Text:</strong> <span>{gameDetails.gameInfo.steamRatingText}</span></li>
                 </ul>
               </div>
             </div>
