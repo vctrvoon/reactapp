@@ -23,17 +23,17 @@ const GameInfo = () => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
-       
+        getDeal();
     }, []);
 
   
     console.log(encodeURIComponent(dealid))
     console.log("Test2")
 
-    useEffect(() => {
-        console.log("getdeal");
-        getDeal()
-    }, [] );
+    // useEffect(() => {
+    //     console.log("getdeal");
+       
+    // }, [] );
     
   return (
     <>
