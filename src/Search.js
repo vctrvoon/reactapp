@@ -10,7 +10,7 @@ const Search = () => {
     const [gameTitle, setGameTitle] = useState('');
 
     const searchTitle = async()=>{
-        const response = await axios.get('https://www.cheapshark.com/api/1.0/deals?storeID=1&pageSize=5')
+        const response = await axios.get('https://www.cheapshark.com/api/1.0/games?title=batman')
         console.log(response);
         setGames(response.data.results);
     }
@@ -26,9 +26,6 @@ const Search = () => {
         searchTitle(gameTitle)
     }
 
-    useEffect(()=>{
-        searchTitle()
-    },[])
     
   return (
     <>
