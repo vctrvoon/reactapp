@@ -10,7 +10,7 @@ const GameInfo = () => {
    
     let {dealid} = useParams();
     const searchURL = 'https://www.cheapshark.com/api/1.0/deals?id='
-    const [gameDetails, setGameDetails] = useState({});
+    const [gameDetails, setGameDetails] = useState([]);
 
     const getDeal = async() =>{
         const response = await axios.get(`${searchURL}${encodeURIComponent(dealid)}`)
