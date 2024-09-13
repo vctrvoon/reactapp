@@ -17,6 +17,9 @@ const GameInfo = () => {
         console.log(response);
         //setGameDetails(response);
     }
+
+    console.log(`${searchURL}${encodeURIComponent(dealid)}`)
+    
     useEffect(() => {
         AOS.init();
         AOS.refresh();
