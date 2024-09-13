@@ -45,7 +45,9 @@ const Search = () => {
                             return (
                                 <div className="col" key={gamelist.id}>
                                 <div className="card h-100">
-                                    <img src={gamelist.thumb} className="card-img-top" alt=""/>
+                                    <div width="414" height="551" >
+                                        <img src={gamelist.thumb} className="card-img-top" alt=""/>
+                                    </div>
                                     <div className="card-body">
                                         <h5 className="card-title">{gamelist.external}</h5>
                                         <p className="card-text">{gamelist.cheapest}</p>

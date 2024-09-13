@@ -223,6 +223,7 @@ h6 {
 /* Desktop Navigation */
 @media (min-width: 1200px) {
   .navmenu {
+    --background-color: rgba(255, 255, 255, 0);
     padding: 0;
   }
 
