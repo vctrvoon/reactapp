@@ -30,7 +30,7 @@ const GameInfo = () => {
 
     useEffect(()=>{
         getDeal()
-    })
+    },[])
 
   return (
     <>
