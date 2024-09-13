@@ -7,6 +7,8 @@ import "aos/dist/aos.css";
 
 
 const GameInfo = () => {
+   
+    let {dealid} = useParams();
 
     const getDeal = async() =>{
         const response = await axios.get(`${searchURL}${encodeURIComponent(dealid)}`)
@@ -19,8 +21,8 @@ const GameInfo = () => {
         console.log("aos");
     }, []);
 
-    let {dealid} = useParams();
-    console.log(dealid)
+  
+    console.log(encodeURIComponent(dealid))
     console.log("Test2")
 
     useEffect(() => {
