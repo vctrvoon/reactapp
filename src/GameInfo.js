@@ -8,7 +8,11 @@ import "aos/dist/aos.css";
 
 const GameInfo = () => {
 
-  
+    const getDeal = async() =>{
+        const response = await axios.get(`${searchURL}${encodeURIComponent(dealid)}`)
+        console.log(response);
+        setGameDetails(response);
+       }
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -25,11 +29,7 @@ const GameInfo = () => {
 
    const searchURL = 'https://www.cheapshark.com/api/1.0/deals?id='
 
-   const getDeal = async() =>{
-    const response = await axios.get(`${searchURL}${encodeURIComponent(dealid)}`)
-    console.log(response);
-    setGameDetails(response);
-   }
+   
 
   return (
     <>
