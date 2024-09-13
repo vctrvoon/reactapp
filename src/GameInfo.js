@@ -24,8 +24,8 @@ const GameInfo = () => {
 
    const getDeal = async() =>{
     const response = await axios.get(`${searchURL}${encodeURIComponent(dealid)}`)
-    console.log(response.data);
-    setGameDetails(response.data);
+    console.log(response);
+    setGameDetails(response);
    }
 
     useEffect(()=>{
