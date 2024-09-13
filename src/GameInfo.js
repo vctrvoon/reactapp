@@ -43,7 +43,7 @@ const GameInfo = () => {
   return (
     <>
           {/* About Section */}
-    <section id="about" className="about section">
+    <section id="about" className="about section" style={{marginTop:"150px"}}>
 
       {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">
