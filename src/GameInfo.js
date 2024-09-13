@@ -13,10 +13,12 @@ const GameInfo = () => {
     const [gameDetails, setGameDetails] = useState([]);
 
     const getDeal = async() =>{
+        console.log("...........start getDeal.......");
         const response = await axios.get(`${searchURL}${encodeURIComponent(dealid)}`)
         console.log(response.data.gameInfo);
         setGameDetails(response.data.gameInfo);
         console.log(gameDetails);
+        console.log("...........end getDeal.......");
     }
 
     console.log(`${searchURL}${encodeURIComponent(dealid)}`)
