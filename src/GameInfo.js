@@ -12,11 +12,13 @@ const GameInfo = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
+    console.log("useEffect");
+    getDeal()
   }, []);
 
     let {dealid} = useParams();
     console.log(dealid)
-    console.log("Test")
+    console.log("Test2")
 
     
     const [gameDetails, setGameDetails] = useState([]);
@@ -28,11 +30,6 @@ const GameInfo = () => {
     console.log(response);
     setGameDetails(response);
    }
-
-    useEffect(()=>{
-        console.log("useEffect");
-        getDeal()
-    },[])
 
   return (
     <>
