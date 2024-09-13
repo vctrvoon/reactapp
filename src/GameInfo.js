@@ -16,6 +16,7 @@ const GameInfo = () => {
 
     let {dealid} = useParams();
     console.log(dealid)
+    console.log("Test")
 
     
     const [gameDetails, setGameDetails] = useState([]);
