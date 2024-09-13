@@ -9,6 +9,8 @@ import "aos/dist/aos.css";
 const GameInfo = () => {
    
     let {dealid} = useParams();
+    const searchURL = 'https://www.cheapshark.com/api/1.0/deals?id='
+    const [gameDetails, setGameDetails] = useState([]);
 
     const getDeal = async() =>{
         const response = await axios.get(`${searchURL}${encodeURIComponent(dealid)}`)
@@ -30,12 +32,6 @@ const GameInfo = () => {
         getDeal()
     }, []);
     
-    const [gameDetails, setGameDetails] = useState([]);
-
-   const searchURL = 'https://www.cheapshark.com/api/1.0/deals?id='
-
-   
-
   return (
     <>
           {/* About Section */}
