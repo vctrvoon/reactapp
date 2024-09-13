@@ -24,7 +24,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/team" element={<Team />} />
         <Route path="/search" element={<Search />} />
-        <Route path="/gameinfo/:id" element={<GameInfo />} />
+        <Route path="/gameinfo/:dealid" element={<GameInfo />} />
       </Routes>
     </div>
   );

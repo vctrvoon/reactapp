@@ -4,12 +4,13 @@ import axios from 'axios'
 
 const GameInfo = () => {
 
-    let {dealId} = useParams();
+    let {dealid} = useParams();
+    console.log(dealid)
 
    const searchURL = 'https://www.cheapshark.com/api/1.0/deals?id='
 
    const getDeal = async() =>{
-    const response = await axios.get(`${searchURL}${dealId}`)
+    const response = await axios.get(`${searchURL}${dealid}`)
     console.log(response)
    }
 
