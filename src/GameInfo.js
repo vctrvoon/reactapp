@@ -29,6 +29,7 @@ const GameInfo = () => {
    }
 
     useEffect(()=>{
+        console.log("useEffect");
         getDeal()
     },[])
 
