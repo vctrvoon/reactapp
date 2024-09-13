@@ -14,21 +14,22 @@ const GameInfo = () => {
 
     const getDeal = async() =>{
         const response = await axios.get(`${searchURL}${encodeURIComponent(dealid)}`)
-        console.log(response);
+        console.log(response.data.gameInfo);
         setGameDetails(response.data.gameInfo);
     }
 
     console.log(`${searchURL}${encodeURIComponent(dealid)}`)
     
     useEffect(() => {
+        console.log(encodeURIComponent(dealid))
+        console.log("Test2")
         AOS.init();
         AOS.refresh();
         getDeal();
     }, []);
 
   
-    console.log(encodeURIComponent(dealid))
-    console.log("Test2")
+    
 
     // useEffect(() => {
     //     console.log("getdeal");
