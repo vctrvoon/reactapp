@@ -11,19 +11,22 @@ const GameInfo = () => {
     const getDeal = async() =>{
         const response = await axios.get(`${searchURL}${encodeURIComponent(dealid)}`)
         console.log(response);
-        setGameDetails(response);
-       }
-  useEffect(() => {
-    AOS.init();
-    AOS.refresh();
-    console.log("useEffect");
-    getDeal()
-  }, []);
+        //setGameDetails(response);
+    }
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+        console.log("aos");
+    }, []);
 
     let {dealid} = useParams();
     console.log(dealid)
     console.log("Test2")
 
+    useEffect(() => {
+        console.log("getdeal");
+        getDeal()
+    }, []);
     
     const [gameDetails, setGameDetails] = useState([]);
 
