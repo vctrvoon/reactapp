@@ -22,7 +22,7 @@ const GameInfo = () => {
     }
 
     console.log(`${searchURL}${encodeURIComponent(dealid)}`)
-    console.log(gameDetails);
+    console.log(`Game details: ${gameDetails}`);
     
     useEffect(() => {
         console.log(encodeURIComponent(dealid))
