@@ -7,6 +7,7 @@ import Services from "./Services";
 import Team from "./Team";
 import { Routes, Route, Outlet, Navigate } from "react-router-dom";
 import Search from "./Search";
+import GameInfo from "./GameInfo";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/team" element={<Team />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/gameinfo/:id" element={<GameInfo />} />
       </Routes>
     </div>
   );

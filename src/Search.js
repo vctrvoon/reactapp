@@ -48,10 +48,10 @@ const Search = () => {
                                         <img src={gamelist.thumb} className="card-img-top" alt=""/>
                                         <div className="card-body">
                                             <h5 className="card-title">{gamelist.external}</h5>
-                                            <p className="card-text">{gamelist.cheapest}</p>
+                                            <p className="card-text"><a href={`/gameinfo/${gamelist.cheapestDealID}`}>More Info</a></p>
                                         </div>
                                         <div className="card-footer">
-                                            <small className="text-muted">Release Date: {gamelist.cheapest}</small>
+                                            <small className="text-muted">Cheapest Price: ${gamelist.cheapest}</small>
                                         </div>
                                     </div>
                                 </div>
