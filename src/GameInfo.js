@@ -10,15 +10,17 @@ const GameInfo = () => {
    
     let {dealid} = useParams();
     const searchURL = 'https://www.cheapshark.com/api/1.0/deals?id='
-    const [gameDetails, setGameDetails] = useState(null);
+    const [gameDetails, setGameDetails] = useState({});
 
     const getDeal = async() =>{
         const response = await axios.get(`${searchURL}${encodeURIComponent(dealid)}`)
         console.log(response.data.gameInfo);
         setGameDetails(response.data.gameInfo);
+        console.log(gameDetails);
     }
 
     console.log(`${searchURL}${encodeURIComponent(dealid)}`)
+    console.log(gameDetails);
     
     useEffect(() => {
         console.log(encodeURIComponent(dealid))
@@ -43,7 +45,7 @@ const GameInfo = () => {
 
       {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">
-        <h2>{gameDetails.name}</h2>
+        <h2>asd</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
       </div>{/* End Section Title */}
 
