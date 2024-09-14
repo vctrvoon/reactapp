@@ -30,32 +30,32 @@ const Services = () => {
           <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div className="service-item position-relative">
               <div className="icon"><i className="bi bi-activity icon"></i></div>
-              <h4><a href="" className="stretched-link">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <h4><a href="" className="stretched-link">Price Comparison</a></h4>
+              <p>Easily compare game prices across multiple retailers to find the best deals.</p>
             </div>
           </div>{/* End Service Item */}
 
           <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div className="service-item position-relative">
               <div className="icon"><i className="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" className="stretched-link">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <h4><a href="" className="stretched-link">Deal Alerts</a></h4>
+              <p>Receive notifications for significant discounts and promotions on your favorite games.</p>
             </div>
           </div>{/* End Service Item */}
 
           <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div className="service-item position-relative">
               <div className="icon"><i className="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" className="stretched-link">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <h4><a href="" className="stretched-link">Price Tracking</a></h4>
+              <p>Monitor game prices over time and get alerts when prices drop.</p>
             </div>
           </div>{/* End Service Item */}
 
           <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div className="service-item position-relative">
               <div className="icon"><i className="bi bi-broadcast icon"></i></div>
-              <h4><a href="" className="stretched-link">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <h4><a href="" className="stretched-link">User Reviews</a></h4>
+              <p>Access user reviews and ratings to make informed purchasing decisions.</p>
             </div>
           </div>{/* End Service Item */}
 
