@@ -13,7 +13,7 @@ const About = () => {
   return (
     <>
       {/* About Section */}
-    <section id="about" className="about section dark-background">
+    <section id="about" className="about section dark-background" style={{marginTop:"150px"}}>
 
       {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">

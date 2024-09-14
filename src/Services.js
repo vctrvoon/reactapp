@@ -15,7 +15,7 @@ const Services = () => {
   return (
     <>
       {/* Services Section */}
-    <section id="services" className="services section dark-background">
+    <section id="services" className="services section dark-background" style={{marginTop:"150px"}}>
 
       {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">
