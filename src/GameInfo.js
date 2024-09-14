@@ -60,19 +60,19 @@ const GameInfo = () => {
           <div className="col-lg-8 content">
             <div className="row">
               <div className="col-lg-6">
-                <ul>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Metacritics Score:</strong> <span>sdfsdf</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Publisher:</strong> <span>sdfsdf</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Release Date:</strong> <span>sdfsdf</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Retail Price:</strong> <span>$456375</span></li>
+              <ul>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Metacritics Score:</strong> <span>{gameDetails.metacriticScore}</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Publisher:</strong> <span>{gameDetails.publisher}</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Release Date:</strong> <span>{gameDetails.releaseDate}</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Retail Price:</strong> <span>${gameDetails.retailPrice}</span></li>
                 </ul>
               </div>
               <div className="col-lg-6">
                 <ul>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Sale Price:</strong> <span>dvgsdbsd</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Steam Rating Count:</strong> <span>sdbsdb</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Steam Rating %:</strong> <span>sdbsdb</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Steam Rating Text:</strong> <span>sdbsdb</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Sale Price:</strong> <span>{gameDetails.salePrice}</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Steam Rating Count:</strong> <span>{gameDetails.steamRatingCount}</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Steam Rating %:</strong> <span>{gameDetails.steamRatingPercent}</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Steam Rating Text:</strong> <span>{gameDetails.steamRatingText}</span></li>
                 </ul>
               </div>
             </div>
