@@ -63,7 +63,7 @@ const GameInfo = () => {
               <ul>
                   <li><i className="bi bi-chevron-right"></i> <strong>Metacritics Score: </strong> <span>{gameDetails.metacriticScore}</span></li>
                   <li><i className="bi bi-chevron-right"></i> <strong>Publisher: </strong> <span>{gameDetails.publisher}</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Release Date: </strong> <span>{gameDetails.releaseDate}</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Release Date: </strong> <span>{EpochToDate(gameDetails.releaseDate)}</span></li>
                   <li><i className="bi bi-chevron-right"></i> <strong>Retail Price: </strong> <span>${gameDetails.retailPrice}</span></li>
                 </ul>
               </div>
