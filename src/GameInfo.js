@@ -32,7 +32,7 @@ const GameInfo = () => {
         getDeal();
     }, []);
 
-    const epochToDate((x)=>{
+    const epochToDate = ((x)=>{
       const myDate = new Date(x * 1000);
       return myDate.toDateString();
     })
